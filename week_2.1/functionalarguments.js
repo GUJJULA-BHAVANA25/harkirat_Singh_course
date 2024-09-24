@@ -15,8 +15,11 @@ function divide(a,b){
 }
 
 function doOperation(a,b,op){
+    //a = 1
+    //b = 2
+    //op = sum
     let val = op(a, b);
     return val;
 }
-const ans = doOperation(1000, 2000, sum);
+const ans = doOperation(1, 2, sum);
 console.log(ans);
