@@ -1,5 +1,5 @@
 //synchronous js
-
+//only one thing gets executed at a time.
 const fsa = require("fs");           //we can use let as well
 
 const contents  = fsa.readFile("a.txt","utf-8");   //bytes, hex

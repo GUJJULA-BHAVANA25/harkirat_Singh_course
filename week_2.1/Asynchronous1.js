@@ -8,7 +8,8 @@ function print(err, data){              //err is error.If the file you want read
         console.log(data);
     }
 }
-
+ 
+//readFile is also provided by node.js
 fs.readFile("aa.txt", "utf-8",print);     //here aa.txt file doesn't exist .so it throw an error.
 fs.readFile("a.txt", "utf-8", print);   //asynchronously
 

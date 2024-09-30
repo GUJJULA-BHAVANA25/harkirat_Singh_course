@@ -1,0 +1,3 @@
+callback is a function passed as an argumenta to another funciton .This technique allows a function to call another function .A callback funciton can run after another funciton has finished
+
+ex:setTimeOut()

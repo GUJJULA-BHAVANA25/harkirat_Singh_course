@@ -1,0 +1,7 @@
+Try to create a promisified version of 
+setTimout
+fetch 
+fs.readFile
+
+//promises, callbacks
+//learn writing a promise
