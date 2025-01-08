@@ -1,0 +1,1 @@
+async and await in js provides a way to write asynchronous code that looks and behaves like synchronous code.
