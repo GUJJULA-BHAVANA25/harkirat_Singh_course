@@ -1,0 +1,185 @@
+.header{
+    width: 1423px;
+    height: 57px;
+    border: 1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+body{
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    align-items: center;
+    
+}
+.VSCode-Link{
+    width: 166.883px;
+    height: 24px;
+    padding: 19px 15px 15px 36px;
+    background-size: 24px 24px;
+    color: #C3D0E5;
+    cursor: pointer;
+    float: left;
+    letter-spacing: -0.2px;
+    line-height: 20px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    position: relative;
+    text-decoration-line: none;
+    text-size-adjust: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    top: -20px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #C3D0E5;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Docs-Link{
+    width: 35.453px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 23.5px;
+    top: -7px;
+}
+.Updates-Link{
+    width: 59.969px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.Updates-Link{
+    width: 59.969px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.Blog-Link{
+    width: 33.039px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.API-Link{
+    width: 24.758px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.Extensions-Link{
+    width: 76.688px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.FAQ-Link{
+    width: 29.914px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.GithubCopilot-Link{
+    width: 24.758px;
+    height: 58px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #9BA3B4;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    left: 21.5px;
+    top: -7px;
+}
+.theme{
+    width: 20px;
+    height: 30px;
+    padding: 1px 6px 1px 6px;
+    align-items: center;
+    margin-right: 4px;
+    background-color: aqua;
+    display: inline-block;
+}
