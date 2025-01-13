@@ -180,6 +180,105 @@ a:link, a:visited, a:hover, a:active {
     padding: 1px 6px 1px 6px;
     align-items: center;
     margin-right: 4px;
-    background-color: aqua;
+    background-color: black;
+    box-shadow: none;
+    border-bottom-color: rgb(155, 163, 180);
+    border-bottom-width: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 130px;
+    appearance: button;
+}
+.theme-icon-light{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+.search{
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    text-decoration-color: rgb(155, 163, 180);
+}
+.search-box{
+    width: 200px;
+    height: 32px;
+    padding: 5px 12px 5px 36px;
+    border: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    background-attachment: scroll;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+    text-align: start;
+}
+.input-group-btn{
+    width: 28px;
+    height: 20px;
+    border-collapse: separate;
+    color: rgb(155, 163, 180);
+    display: block;
+    font-weight: 400;
+    left: 8px;
+    position: absolute;
+    white-space-collapse: collapse;
+    top: 6px;
+    bottom: 6px;
+    right: 164px;
+
+}
+.btn{
+    width: 16px;
+    height: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: -1px;
+    align-items: flex-start;
+    appearance: button;
+    cursor: text;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    border-style: none;
+}
+.download-button{
+    cursor: pointer;
+    display: block;
+    list-style-type: none;
+    position: relative;   
+    text-size-adjust: 100%;
+    width: 74.008px;
+    height: 16px;
+    top: 0px;
+}
+.download-btn{
+    background-color: rgb(0, 120, 212);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-style: solid;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    position: relative;
+    top: -60px;
+    left: 1190px;
     display: inline-block;
 }
