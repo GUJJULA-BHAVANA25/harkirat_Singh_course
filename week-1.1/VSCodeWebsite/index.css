@@ -282,3 +282,47 @@ a:link, a:visited, a:hover, a:active {
     left: 1190px;
     display: inline-block;
 }
+.updates-container{
+    width: 1391px;
+    height: 54.398px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    top: 60px;
+}
+.Inner-Updates-Container{
+    width: 1240px;
+    height: 38.398px;
+    padding: 8px 40px 8px 40px;
+    margin-left: 19.5px;
+    margin-right: 19.5px;
+    position: relative;
+    top: 0px;
+}
+.Updates-Message{
+    color: rgb(159, 177, 209);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#banner-link-updates{
+    text-decoration: underline;
+    text-decoration-color: rgb(77, 170, 252);
+    color: rgb(77, 170, 252);
+}
+.hero-text{
+    width: 1240px;
+    height: 320.312px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: antiquewhite;
+    position: relative;
+    top: 111px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
