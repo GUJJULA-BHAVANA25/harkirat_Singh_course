@@ -318,11 +318,142 @@ a:link, a:visited, a:hover, a:active {
     width: 1240px;
     height: 320.312px;
     padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: antiquewhite;
     position: relative;
     top: 111px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hero-text{
+    width: 1000px;
+    height: 172.797px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    color: rgb(195, 208, 229);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    text-size-adjust: 100%;
+    text-wrap-mode: wrap;
+    text-wrap-style: balance;
+}
+.Primary-Buttons{
+    width: 418.961px;
+    height: 47.711px;
+    box-sizing: border-box;
+    color: rgb(155, 163, 180);
+    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    row-gap: 10px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    
+}
+.Download-Content{
+    width: 418.961px;
+    height: 112.516px;
+    box-sizing: border-box;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.download-for-windows-button{
+    width: auto;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    align-items: flex-start;
+    background-color: rgb(0, 120, 212);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border: 1px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.Git-Copilot-Button{
+    width: 172.635px;
+    height: 45.711px;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    background-color: rgb(37, 41, 46);
+    border-style: solid;
+    border: 1px;
+    color: rgb(195, 208, 229);
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration-color: rgb(195, 208, 229);
+}
+#Dowload-Matrix-Label{
+    width: 418.961px;
+    height: 19.203px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: rgb(159, 177, 209);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    text-size-adjust: 100%;
+
+}
+#download-button-insiders{
+    color: rgb(77, 170, 252);
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+
+}
+.terms{
+    width: 418.961px;
+    height: 17.602px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: rgb(155, 163, 180);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    transition-timing-function: ease-out;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+}
+.demo-video-container{
+    width: 1240px;
+    height: 832.211px;
+    aspect-ratio: 1.49 / 1;
+    display: block;
+    position: relative;
+    top: 140px;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
