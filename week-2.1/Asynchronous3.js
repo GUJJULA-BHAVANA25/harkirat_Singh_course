@@ -10,7 +10,9 @@ console.log("say hi to loupe");
 
 let c = 0
 for(let i = 0; i < 100; i++){                 //this is CPU intensive task
+    console.log(c);
     c = c + 1;
+
 }
 
 console.log("expensive operetion done");
