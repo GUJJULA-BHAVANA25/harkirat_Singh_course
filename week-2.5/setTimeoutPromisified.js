@@ -4,6 +4,7 @@ function setTimeoutPromisified(){
     });
 }
 
+//setTimeout => promisified setTimeout 
 function callback(){
     console.log("1 second has passed");
 }
