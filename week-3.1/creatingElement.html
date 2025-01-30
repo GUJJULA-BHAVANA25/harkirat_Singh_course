@@ -1,0 +1,19 @@
+ <!--
+  Adding Elements:
+->create Elements
+->appendChild
+-->
+ <html>
+    <body>
+        <div id="topDiv">
+            hi there
+        </div>
+    </body>
+    
+    <script>
+        const divEl = document.createElement("div");
+        divEl.innerHTML = "hi there";
+        const parentEl = document.querySelector("body");
+        parentEl.appendChild(divEl);                 //just creating a div element itself is not enough to show that on the screen. we need to append the created element to the body or a particular tag
+    </script>
+ </html>

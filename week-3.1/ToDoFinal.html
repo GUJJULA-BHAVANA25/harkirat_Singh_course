@@ -11,16 +11,16 @@
         }
 
         function addTodo(){
-            const inputEl = document.querySelector("input");
-            const value = inputEl.value;
+            const inputEl = document.querySelector("input");        //gets the text in the input tag
+            const value = inputEl.value;                    //test in the input tag gets stored over here
 
-            const newDivEl = document.createElement("div");
-            newDivEl.setAttribute("id","todo-" + ctr);
+            const newDivEl = document.createElement("div");                //created a new div element
+            newDivEl.setAttribute("id","todo-" + ctr);               //set it an id as "todo- "
             //newDivEl.innerHTML = value;
-            newDivEl.innerHTML = "<div>" + value + '</div><button onclick="deleteTodo(' + ctr + ')">delete</button>';
+            newDivEl.innerHTML = "<div>" + value + '</div><button onclick="deleteTodo(' + ctr + ')">delete</button>';              //inserting the fetched element in the new created div element and adding a delete button to the side of that.
 
-            document.querySelector("body").appendChild(newDivEl);
-            ctr = ctr + 1;
-        }
+            document.querySelector("body").appendChild(newDivEl);          //adding the div element to the body 
+            ctr = ctr + 1;          //now going to next element
+        } 
     </script>
 </html>
