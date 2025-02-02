@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+        <title>replit</title>
+        <link href="style.css" rel="stylesheet" type="text/css"  />
+    </head>
+    <body>
+        <h1>Todo list</h1>
+        <div class="todos">
+            <div class="todo1">
+                <h4>1. take bath</h4>
+                <button onclick="deleteToDo(1)">delete</button>
+            </div>
+            <div class="todo-2">
+                <h4>2 Go out to eat</h4>
+                <button onclick="deleteToDo(2)">delete</button>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        let currentIndex = 3;
+        function addTodo(){
+            const inputEl = document.querySelector("input");
+            const value = inputEl.value;
+
+            const newDivEl = document.createElement("div");
+            newDivEl.setAttribute("id","todo-" + currentIndex);
+            //newDivEl.innerHTML = value;
+            newDivEl.innerHTML = "<div>" + value + '</div><button onclick="deleteTodo(' + currentIndex + ')">delete</button>';
+
+            document.querySelector("#TodoContainer").appendChild(newDivEl);
+            currentIndex = currentIndex + 1;
+        }
+
+        function deleteTodo(index){
+            const element = document.getElementById("todo-" + currentIndex);
+            element.parentNode.removeChild(element);
+        }
+    </script>
+</html>
