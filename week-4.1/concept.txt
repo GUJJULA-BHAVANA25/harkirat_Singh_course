@@ -1,0 +1,12 @@
+--> ECMASCRIPT(this is impletmented by the below all the browsers and     engines)
+    -->NODE.JS : a javascript runtime that uses the V8 engine
+    -->Bun:that is competing with node.js
+    -->google chrome/Safari
+
+
+
+-->npm(node package manager)
+    -->npm init(initializing a project)
+    -->npm run test(running scripts)
+    -->npm install chalk(installing external dependencies) (here chalk is the very first external dependencies we are introducing)
+    
