@@ -12,3 +12,6 @@ console.log(path.join(__dirname, "index.js"));
 //node external packages
 //express
 //chalk
+
+
+//caret - ^ (in package.json file)
