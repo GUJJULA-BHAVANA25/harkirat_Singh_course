@@ -1,0 +1,21 @@
+-->you will be writing the raw code but if someone who knows coding only can use that code to do some work
+-->but you want to make the code used by everyone around the world even they don't know coding 
+-->so here HTTP comes into the picture
+
+-->creating HTTP server : ans-express
+
+
+
+Request methods:
+-->GET - going to ask something .getting something .ex:in local host we are asking?n=10 .so that is the get Request
+-->POST - linkedin POST
+-->PUT - updating data on server
+-->DELETE - removing
+
+
+Status Codes:
+-->200 - everything is fine
+-->404 - whenever router is not exist
+-->500 - something went wrong
+-->411 - inputs are incorrect
+-->403 - you are not allowed to access
