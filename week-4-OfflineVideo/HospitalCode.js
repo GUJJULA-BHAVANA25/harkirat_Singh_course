@@ -57,6 +57,11 @@ app.post("/", function(req, res){
 //now we will get an output as msg : done
 
 app.put("/" , function(req, res){
+    if(!isThereAtleastOneUnhealthyKidney()){                 //assignment.txt solution
+        res.status(411).json({
+            msg: "you have all good kidneys"
+        })   
+    }
     for(let i = 0; i < users[0].kidneys.length; i++){
         users[0].kidneys[i].healthy = true;
     }
