@@ -7,6 +7,5 @@ whenever data comes . store it in a separate file called todos.json file
 easy way:
 store the data in memory
 
-
 #3
 add user logic

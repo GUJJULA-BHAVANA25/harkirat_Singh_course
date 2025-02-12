@@ -7,7 +7,7 @@ app.post('/', function(req, res){
     //create a random id for the todo
     //extract the todo title from the body
     todos.push({
-        titile,
+        title,
         id
     })
 })
