@@ -7,10 +7,10 @@
 
 
 Request methods:
--->GET - going to ask something .getting something .ex:in local host we are asking?n=10 .so that is the get Request
--->POST - linkedin POST
--->PUT - updating data on server
--->DELETE - removing
+-->GET - going to ask something .getting something .ex:in local host we are asking?n=10 .so that is the get Request(fetching)    - read 
+-->POST - linkedin POST      - create
+-->PUT - updating data on server       - update
+-->DELETE - removing               - delete
 
 
 Status Codes:
@@ -19,3 +19,10 @@ Status Codes:
 -->500 - something went wrong
 -->411 - inputs are incorrect
 -->403 - you are not allowed to access
+
+
+
+HTTP Protocols:
+-->HTTP => 80
+-->HTTPS => 443
+-->SSH => 22
