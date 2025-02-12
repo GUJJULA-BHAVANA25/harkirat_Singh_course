@@ -1,0 +1,12 @@
+#1
+hard way:
+store the data in a file, foundation for databases
+whenever data comes . store it in a separate file called todos.json file
+
+#2
+easy way:
+store the data in memory
+
+
+#3
+add user logic
