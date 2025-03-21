@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>LinkedIn</title>
+    </head>
+    <body>
+        LinkedIn
+        <div id="posts"></div>
+        <script>
+            //async await is just syntactic sugar for .then syntax
+            async function getRecentPost() {
+                console.log("before sending request");
+                const response = await fetch("https://google.com")
+                console.log(data);
+                console.log("request has been processed")
+                document.getElementById("posts").innerHTML = data.body
+            }                             //this under thhe hood gets converted into (next next line)
+
+            async function getRecentPost() {                         //this
+                console.log("before sending request");
+                await fetch("https://google.com")
+                   .then(function(response) {
+                    response.json().then(function(data) {
+                        console.log(data);
+                        console.log("request has been processed");
+                        document.getElementById("posts").innerHTML = data.body
+                    })
+                   })
+            }
+        </script>
+    </body>
+
+</html>

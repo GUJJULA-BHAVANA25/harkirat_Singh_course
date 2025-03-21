@@ -2,4 +2,9 @@
 -->HTTP client - fetch
 
 
-//AJAX - asynchronous javascript and XML
+//AJAX - asynchronous javascript and XML - it is used to make the website not to reload when we go to particular sub page in that website
+
+
+json.parse("{}")   - it is used to convert a string to object
+
+json.stringify({})   - it is used to convert an obj to string
