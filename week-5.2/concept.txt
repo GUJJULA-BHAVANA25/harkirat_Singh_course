@@ -1,0 +1,11 @@
+-->we can work without middlewares also.But they let code to be syntactically easy.
+-->use case: we can modify the request object
+-->it is used for authentication
+-->calling next middleware in the stack
+-->express is nothing but a chain of middlewares
+-->middlewares refer to function that have access to request object(req) and response object(res) and the next function
+
+
+CORS(cross origin resource sharing)
+-->frontend is hosted on some webiste google.com and backend is hosted on some other url like api.google.com
+-->to get that backend present in other website.we will be using fetch operation in frontend

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.6/axios.min.js"></script>
+    <script>
+        async function sendRequest(){
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            const response = await axios.post("http://localhost:3000/sum", {                       
+                //you should no send the request to https.if you do so then cross orgin is 
+                //restricted .you can send the request to http.
+                a: a,
+                b: b
+            })
+            console.log(response);
+        }
+        //serves a folder over http          
+    </script>
+</head>
+
+<body>
+    <input id="a" type="text" placeholder="First Value"></input>
+    <input id="b" type="text" placeholder="Second Value"></input>
+
+    <button onclick="sendRequest()">Find sum</button>
+</body>
+
+</html>
+
+<!--how to host a frontend file.not like opening the file from file explorer.the url should be like https://localhost:3000 like this-->
+
+<!-- how:
+ open the folder
+ run the command "npx serve"--y>
