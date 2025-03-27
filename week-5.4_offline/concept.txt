@@ -1,0 +1,5 @@
+-->fetch and axios are two popular ways to hit a backend server and get back response from them
+
+-->axios is external library and fetch is there in js library
+
+-->axios is used to send http request as it is easy to write it 
