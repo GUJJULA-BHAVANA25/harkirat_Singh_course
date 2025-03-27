@@ -1,0 +1,3 @@
+//create a map function that takes 2 inputs an array, and a transformation callback/ fun and transforms the arrya into a new one using the transformation function
+
+//create a map function that takes an array and a transform funciton as input and return s the transformed array as output
