@@ -1,0 +1,3 @@
+//use (HTTP deep dive) for concepts
+
+//jwt creation is very similar to encryption
