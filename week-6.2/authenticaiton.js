@@ -1,5 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
+
 const JWT_SECRET = "iloveyou143";
 
 const app = express();
@@ -11,6 +12,12 @@ function logger(req, res, next){
     console.log(req.method + "request came");
     next();
 }
+
+//lovalhost:3000
+app.get("/", function(req, res){
+    res.sendFile(__dirname + "/public/index.html");
+})
+
 app.post("/signup",logger, function(req, res){
     const username = req.body.username;
     const password = req.body.password;
@@ -58,7 +65,7 @@ app.post("/signin",logger, function(req, res){
 
     if(foundUser){
         const token = jwt.sign({
-            username: username
+            username: users[i].username
         }, JWT_SECRET);
         res.header("jwt", token)               //to send the response header 
         res.json({

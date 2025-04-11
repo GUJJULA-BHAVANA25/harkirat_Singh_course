@@ -1,1 +1,13 @@
 --> can you try creating a middleware called auth that verifies if a user is logged in and ends the request early if the user isn't logged is
+
+
+-->conditionally render the logour or the signin/signup pages based on if the user is already logged in or not
+
+
+-->creating a TODO application where:
+    user can signup/signin
+    user can create/delete/update TODOs
+    user can see their existing todos and mark them as done
+
+
+-->explore:passport.js
