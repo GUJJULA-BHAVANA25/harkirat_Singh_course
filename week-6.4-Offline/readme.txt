@@ -1,0 +1,1 @@
+-->do not connect to college network .try with hotspot or mobile network
