@@ -1,0 +1,2 @@
+check that the password has one uppercase letter, one lowercase character, one spl character.
+//check zod documentation 
