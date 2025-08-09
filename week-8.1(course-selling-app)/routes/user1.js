@@ -3,30 +3,30 @@
 
 //the above two lines are same as the below line
 
-const {Router} = require("express");
+const { Router } = require("express");
 
-const UserRouter = Router();      //It is a function.even though it starts with a capital letter
+const UserRouter = Router();      //It is a function.even though it starts with a capital letter            //it is the place where we will handle incoming requests.
 
 
-    UserRouter.post("/user/signup", function(req, res){
-        res.json({
-            message: "signup endpoint"
-        })
+UserRouter.post("/signup", function(req, res){
+    res.json({
+        message: "signup endpoint"
     })
+})
 
-    UserRouter.post("/user/signin", function(req, res){
-        res.json({
-            message: "signin endpoint"
-        })
+UserRouter.post("/signin", function(req, res){
+    res.json({
+        message: "signin endpoint"
     })
+})
 
-    UserRouter.get("/user/purchases", function(req, res){
-        res.json({
-            message: "all purchases"
-        })
+UserRouter.get("/purchases", function(req, res){
+    res.json({
+        message: "all purchases"
     })
+})
 
 
 module.exports = {
-    createUserRoutes: createUserRoutes
+    UserRouter: UserRouter
 }
