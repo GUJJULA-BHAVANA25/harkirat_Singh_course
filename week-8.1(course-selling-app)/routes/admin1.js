@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const adminRouter = Router();
 const adminSchema = require("../db");
+//bcrypt, zod, jsonwebtoken            //these libraries are used for signing in and up
 
 adminRouter.post("/signup", function(req, res){
     res.json({

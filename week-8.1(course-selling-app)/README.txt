@@ -16,3 +16,12 @@
 
 //db connection string
 mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-selling-app
+
+//tips:
+-->ctrl+shift+l : to select multiple lines 
+
+//some libraried to have a look on
+-->p5.js
+-->passport.js (it is a library used for authentication through google, github etc)
+
+-->nodemon is a library that works like node.but it actually keep on updating and keep on checking all the files.But node works only whenever we run it.
