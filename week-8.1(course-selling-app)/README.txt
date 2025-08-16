@@ -36,3 +36,4 @@ mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-s
 
 
 -->it is a best practice to store mongodb url's to store in separate file called .env file . so that secrets can be kept as secrets
+-->along with .env file . we also have .env.example file . this file we can push to git. there is no issue with that.
