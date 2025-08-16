@@ -25,3 +25,11 @@ mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-s
 -->passport.js (it is a library used for authentication through google, github etc)
 
 -->nodemon is a library that works like node.but it actually keep on updating and keep on checking all the files.But node works only whenever we run it.
+
+
+-->we use different admin and user jwt's
+
+-->we should not repeat the same thing in different files. it is a bad practice
+-->or we should not make a circular dependency, like if a variable is writen in one file and exports that and use it in another file. it makes hard to debug sometimes. so do not make a circular dependency.
+
+-->so jwt passwords . put them in a different file called config.js

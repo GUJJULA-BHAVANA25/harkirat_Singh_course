@@ -3,7 +3,7 @@ const adminRouter = Router();
 const {adminModel} = require("../db");
 //bcrypt, zod, jsonwebtoken            //these libraries are used for signing in and up
 const jwt = require("jsonwebtoken");
-const JWT_ADMIN_PASSWORD = "bhavana143143143143"
+
 
 adminRouter.post("/signup",async function(req, res){
    const {email, password, firstName, lastName} = req.body;
