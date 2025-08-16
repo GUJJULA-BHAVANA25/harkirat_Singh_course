@@ -6,7 +6,7 @@
 const { Router } = require("express");
 const { UserModel } = require("../db");
 const jwt = require("jsonwebtoken");
-
+const { JWT_USER_PASSWORD } = require("./config");
 
 const UserRouter = Router();      //It is a function.even though it starts with a capital letter            //it is the place where we will handle incoming requests.
 

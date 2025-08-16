@@ -1,9 +1,10 @@
 const { Router } = require("express");
 const adminRouter = Router();
-const {adminModel} = require("../db");
+const {adminModel, courseModel} = require("../db");
 //bcrypt, zod, jsonwebtoken            //these libraries are used for signing in and up
 const jwt = require("jsonwebtoken");
-
+const { JWT_ADMIN_PASSWORD } = require("./config");
+const { adminMiddleware } = require("../middleware/admin_middleware");
 
 adminRouter.post("/signup",async function(req, res){
    const {email, password, firstName, lastName} = req.body;
@@ -31,7 +32,7 @@ adminRouter.post("/signin", async function(req, res){
 
     if(admin) {
         const token = jwt.sign({
-            id: admin.id
+            id: admin._id
         }, JWT_ADMIN_PASSWORD);
 
         //if you want to do cookie based authentication. not token based authentication,then you need to do your cookie based authentication logic over here
@@ -46,9 +47,18 @@ adminRouter.post("/signin", async function(req, res){
     }
 })
 
-adminRouter.post("/createCourse" , function(req, res){
+adminRouter.post("/createCourse", adminMiddleware,async function(req, res){
+    const adminId = req.userId;
+
+    const { title, description, imageURL } = req.body;
+
+    const course = await courseModel.create ({
+        title, description, imageUrl, price, creatorId: adminId
+    })
+
     res.json({
-        message: "add a course"
+        message: "Course created",
+        courseId: course._id
     })
 })
 
