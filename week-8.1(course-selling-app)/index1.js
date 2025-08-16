@@ -12,7 +12,7 @@ app.use("/api/v1/user1", UserRouter);
 app.use("/api/v1/admin", adminRouter)
 
 async function main(){
-    await mongoose.connect("mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-selling-app")
+    await mongoose.connect("")
     app.listen(3000);
     console.log("listening on port 3000")
 }

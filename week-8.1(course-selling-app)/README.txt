@@ -33,3 +33,6 @@ mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-s
 -->or we should not make a circular dependency, like if a variable is writen in one file and exports that and use it in another file. it makes hard to debug sometimes. so do not make a circular dependency.
 
 -->so jwt passwords . put them in a different file called config.js
+
+
+-->it is a best practice to store mongodb url's to store in separate file called .env file . so that secrets can be kept as secrets

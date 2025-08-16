@@ -3,7 +3,7 @@ const adminRouter = Router();
 const {adminModel, courseModel} = require("../db");
 //bcrypt, zod, jsonwebtoken            //these libraries are used for signing in and up
 const jwt = require("jsonwebtoken");
-const { JWT_ADMIN_PASSWORD } = require("./config");
+const { JWT_ADMIN_PASSWORD } = require("../config");
 const { adminMiddleware } = require("../middleware/admin_middleware");
 
 adminRouter.post("/signup",async function(req, res){
