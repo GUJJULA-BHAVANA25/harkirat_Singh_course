@@ -62,18 +62,40 @@ adminRouter.post("/createCourse", adminMiddleware,async function(req, res){
     })
 })
 
-adminRouter.post("/changeCourse" , function(req, res){
+adminRouter.post("/changeCourse",adminMiddleware, async function(req, res){
+    const adminId = req.userId;
+
+    const { title, description, imageURL, price, courseId } = req.body;
+
+    const course = await courseModel.findOne({
+        _id: courseId,
+        creatorId: adminId
+    },{
+        title: title,
+        description: description,
+        imageURL: imageURL,
+        price: price
+    })
+
     res.json({
-        message: "add a course"
+        message: "Course updated",
+        courseId: course._id
     })
 })
 
-adminRouter.post("/course/bulk" , function(req, res){
+adminRouter.post("/course/bulk" ,adminMiddleware,async function(req, res){
+    const adminId = req.userId;
+
+    const courses = await courseModel.find({
+        creatorId: adminId
+    });
+
     res.json({
-        message: "add a course"
+        message: "Courses fetched",
+        courses
     })
 })
 
-module.exports ={
+module.exports = {
     adminRouter 
 }

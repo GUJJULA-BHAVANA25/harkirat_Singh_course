@@ -37,3 +37,6 @@ mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-s
 
 -->it is a best practice to store mongodb url's to store in separate file called .env file . so that secrets can be kept as secrets
 -->along with .env file . we also have .env.example file . this file we can push to git. there is no issue with that.
+
+-->before using this install(npm install dotenv)
+-->to use password in .env file . we need to import dotenv file to that particular file and use it
