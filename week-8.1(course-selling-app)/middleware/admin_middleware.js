@@ -15,6 +15,4 @@ function AdminMiddleware(req, res, next){
     }
 }
 
-module.exports = {
-    AdminMiddleware
-}
+module.exports ={ AdminMiddleware } 

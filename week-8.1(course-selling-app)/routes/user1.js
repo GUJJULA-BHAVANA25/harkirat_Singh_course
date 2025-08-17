@@ -4,9 +4,10 @@
 //the above two lines are same as the below line
 
 const { Router } = require("express");
-const { UserModel } = require("../db");
+const { UserModel, purchaseModel } = require("../db");
 const jwt = require("jsonwebtoken");
 const { JWT_USER_PASSWORD } = require("../config");
+const { userMiddleware } = require("../middleware/user_middleware");
 
 const UserRouter = Router();      //It is a function.even though it starts with a capital letter            //it is the place where we will handle incoming requests.
 
@@ -52,9 +53,15 @@ UserRouter.post("/signin",async function(req, res){
     }
 })
 
-UserRouter.get("/purchases", function(req, res){
+UserRouter.get("/purchases", userMiddleware,async function(req, res){
+    const userId = req.userId;
+
+    const purchases = await purchaseModel.find({
+        userId,
+    })
+    
     res.json({
-        message: "all purchases"
+        purchases
     })
 })
 

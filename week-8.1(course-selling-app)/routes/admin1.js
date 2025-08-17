@@ -4,7 +4,7 @@ const {adminModel, courseModel} = require("../db");
 //bcrypt, zod, jsonwebtoken            //these libraries are used for signing in and up
 const jwt = require("jsonwebtoken");
 const { JWT_ADMIN_PASSWORD } = require("../config");
-const { adminMiddleware } = require("../middleware/admin_middleware");
+const { AdminMiddleware } = require("../middleware/admin_middleware");
 
 adminRouter.post("/signup",async function(req, res){
    const {email, password, firstName, lastName} = req.body;
@@ -47,10 +47,10 @@ adminRouter.post("/signin", async function(req, res){
     }
 })
 
-adminRouter.post("/createCourse", adminMiddleware,async function(req, res){
+adminRouter.post("/createCourse", AdminMiddleware, async function(req, res){
     const adminId = req.userId;
 
-    const { title, description, imageURL } = req.body;
+    const { title, description, imageUrl , price} = req.body;
 
     const course = await courseModel.create ({
         title, description, imageUrl, price, creatorId: adminId
@@ -62,18 +62,18 @@ adminRouter.post("/createCourse", adminMiddleware,async function(req, res){
     })
 })
 
-adminRouter.post("/changeCourse",adminMiddleware, async function(req, res){
+adminRouter.put("/changeCourse", AdminMiddleware, async function(req, res){
     const adminId = req.userId;
 
-    const { title, description, imageURL, price, courseId } = req.body;
+    const { title, description, imageUrl, price, courseId } = req.body;
 
-    const course = await courseModel.findOne({
+    const course = await courseModel.findOneAndUpdate({
         _id: courseId,
         creatorId: adminId
     },{
         title: title,
         description: description,
-        imageURL: imageURL,
+        imageURL: imageUrl,
         price: price
     })
 
@@ -83,7 +83,7 @@ adminRouter.post("/changeCourse",adminMiddleware, async function(req, res){
     })
 })
 
-adminRouter.post("/course/bulk" ,adminMiddleware,async function(req, res){
+adminRouter.get("/course/bulk", AdminMiddleware, async function(req, res){
     const adminId = req.userId;
 
     const courses = await courseModel.find({
