@@ -40,3 +40,17 @@ mongodb+srv://gujjula_bhavana:Bhavan%40143@cluster0.h0zkntc.mongodb.net/course-s
 
 -->before using this install(npm install dotenv)
 -->to use password in .env file . we need to import dotenv file to that particular file and use it
+
+
+
+Good to haves
+ - Use cookies instead of JET for auth
+ - Add a rate limiting middlewares
+ - frontend in ejs (low pri)
+ - frontend in React
+
+
+-->four important stacks are: tailwind, react, postgress, prisma
+
+
+-->if you want to good at UI. build websites like these: heyge.com, stripe.com
